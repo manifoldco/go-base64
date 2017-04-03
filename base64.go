@@ -19,7 +19,7 @@ func New(b []byte) *Value {
 	return &v
 }
 
-// NeweFromString returns a Value containing the decoded data in encoded.
+// NewFromString returns a Value containing the decoded data in encoded.
 func NewFromString(encoded string) (*Value, error) {
 	out, err := base64.RawURLEncoding.DecodeString(encoded)
 	if err != nil {
